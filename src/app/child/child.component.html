@@ -1,0 +1,14 @@
+<br/>
+<br/>
+<p>child works!</p>
+<div *ngIf="atchild">
+        <h6>{{atchild.fullname}}</h6>
+</div>
+<hr>
+<div *ngFor ="let emp of empService_.list">
+        <span>{{emp.id}}</span>--<span>{{emp.fullname}}</span>
+
+        <button class="btn btn-primary"(click)='datapassFromChild(emp)'  (click) ='fromchildmethod()'>button</button>
+</div>
+    
+

@@ -1,0 +1,28 @@
+{
+  "Employees": [
+    {
+      "id": 1,
+      "fullname": "BHARGAV",
+      "email": "REDDY@GMAIL.COM",
+      "password": "KOMALI@1234"
+    },
+    {
+      "id": 2,
+      "fullname": "BHARGAV",
+      "email": "BHARGAV@GMAIL.COM",
+      "password": "thor@1234"
+    },
+    {
+      "id": 4,
+      "fullname": "ASHOK",
+      "email": "ashok@gamil.com",
+      "password": "ASHO"
+    },
+    {
+      "id": 5,
+      "fullname": "LOKI",
+      "email": "LOKI@GMAIL.COM",
+      "password": "LOKI@1234"
+    }
+  ]
+}

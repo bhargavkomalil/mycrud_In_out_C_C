@@ -1,0 +1,44 @@
+<br>
+<br>
+<app-child [atchild] = "details" (fromchild)= 'toparent($event)'></app-child>
+
+<br/>
+<br/>
+<div class="container">
+    <table class="table">
+      <thead>
+        <tr>
+            <th>id</th>
+          <th>fullname</th>
+          <th>Email</th>
+          <th>password</th>
+          <th>Edit/Delete</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- <tr *ngFor = 'let employee of this.employeeslist'>empService_ -->
+        <tr *ngFor = 'let employee of empService_.list'>
+                <td>{{employee.id}}</td>  
+          <td>{{employee.fullname}}</td>
+          <td>{{employee.email}}</td>
+          <td>{{employee.password}}</td>
+          <td>
+            <button type="submit" class="btn btn-primary"  (click)="onSelect(employee)">select</button>
+            <!-- <button type="submit" class="btn  btn-danger"(click) = 'onDelete(employee)'>Delete</button> -->
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  {{details}}----from child it is @Input
+  <div *ngIf= 'this.details'>
+      <p>{{this.details.fullname}}--from child</p>
+  </div>
+
+  <div *ngIf= 'this.toparentside'>
+    <span>{{toparentside.fullname}}</span>----it is in prents Output "@Output"
+</div>
+
+
+

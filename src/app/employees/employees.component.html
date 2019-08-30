@@ -1,0 +1,12 @@
+<!-- <p>employees works!</p> -->
+<!-- <app-employee-create></app-employee-create>
+<app-employee-list></app-employee-list> -->
+<router-outlet></router-outlet>
+
+<!-- to send through service from component to component -->
+<div *ngFor ="let emp of Service_.list">
+    <P>{{emp.id}}---{{emp.fullname}}</P>
+    <button  class="btn  btn-danger" (click)='changeNewMessage(emp)'>New Message</button>
+</div>
+
+

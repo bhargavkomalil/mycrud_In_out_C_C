@@ -23,6 +23,12 @@
       "fullname": "LOKI",
       "email": "LOKI@GMAIL.COM",
       "password": "LOKI@1234"
+    },
+    {
+      "id": 6,
+      "fullname": "bhargav",
+      "email": "bahravaldja@gamil.com",
+      "password": "lkasjdfjal@#1234"
     }
   ]
 }

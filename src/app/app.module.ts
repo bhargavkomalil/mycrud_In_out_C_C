@@ -12,6 +12,8 @@ import { EmployeeService } from './shared/employee.service';
 import { DatashareComponent } from './datashare/datashare.component';
 import { ChildComponent } from './child/child.component';
 import { CompTocompComponent } from './comp-tocomp/comp-tocomp.component';
+import { AppshadowDirective } from './appshadow.directive';
+import { SamplePipePipe } from './sample-pipe.pipe';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { CompTocompComponent } from './comp-tocomp/comp-tocomp.component';
     EmployeeListComponent,
     DatashareComponent,
     ChildComponent,
-    CompTocompComponent
+    CompTocompComponent,
+    AppshadowDirective,
+    SamplePipePipe
   ],
   imports: [
     BrowserModule,
@@ -29,7 +33,7 @@ import { CompTocompComponent } from './comp-tocomp/comp-tocomp.component';
     FormsModule,
     HttpClientModule
   ],
-  providers: [EmployeeService],
+  providers: [EmployeeService,SamplePipePipe],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import{Router}from '@angular/router'
 import { EmployeeService } from 'src/app/shared/employee.service';
 import { Employee } from 'src/app/shared/employee.model';
+import {SamplePipePipe} from '../../sample-pipe.pipe';
 
 
 @Component({
@@ -12,14 +13,19 @@ import { Employee } from 'src/app/shared/employee.model';
 export class EmployeeListComponent implements OnInit {
 
   employeeslist;
-  constructor(private empService_:EmployeeService,private router_:Router) {
+  constructor(
+    private empService_:EmployeeService,
+    private router_:Router,
+    private captPipe_:SamplePipePipe
+    
+    ) {
     // this.getempslist();  
    }
    
     ngOnInit() {
     
-   this.empService_.getemps();
-   this.getempslist();
+    this.empService_.getemps();
+    this.getempslist();
   
   }
   getempslist(){
@@ -48,4 +54,12 @@ export class EmployeeListComponent implements OnInit {
     });
     // this.empService_.getemps();
   };
+  // ObjData:any;
+  // samplePipecall(pipeobj){
+  //   console.log('list_pipe',pipeobj)
+  //   // debugger;
+
+  //   this.ObjData = this.captPipe_.transform(pipeobj);
+  //   console.log('OjbData',this.ObjData) 
+  // }
 }

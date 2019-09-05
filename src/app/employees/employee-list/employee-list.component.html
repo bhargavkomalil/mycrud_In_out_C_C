@@ -19,7 +19,7 @@ Search : <input type="text" class="form-control" [(ngModel)]="searchText">
       </thead>
       <tbody>
         <!-- <tr *ngFor = 'let employee of this.employeeslist'>empService_ -->
-        <tr *ngFor = "let employee of empService_.list | samplePipe:searchText:'name'">
+        <tr *ngFor = "let employee of empService_.list | samplePipe:searchText:'fullname'">
                 <td>{{employee.id}}</td>  
           <td>{{employee.fullname}}</td>
           <td>{{employee.email}}</td>

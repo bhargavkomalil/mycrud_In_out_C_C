@@ -53,4 +53,11 @@ export class EmployeeService {
     // debugger;
    return this.http_.delete(environment.apiBaseUrl +'/'+emp.id)
   }
+
+  // prodetails:any;
+  GetProducts() {
+    // debugger;
+  return this.http_.get(environment.apiProductUrl);
+  }
+
 }

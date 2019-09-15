@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {FormsModule} from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
+import {FileUploadModule} from 'ng2-file-upload';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -14,6 +15,9 @@ import { ChildComponent } from './child/child.component';
 import { CompTocompComponent } from './comp-tocomp/comp-tocomp.component';
 import { AppshadowDirective } from './appshadow.directive';
 import { SamplePipePipe } from './sample-pipe.pipe';
+import { FileUpDownComponent } from './file-up-down/file-up-down.component';
+import { ProductListComponent } from './product-list/product-list.component';
+import { ProductListService } from './product-list.service';
 
 @NgModule({
   declarations: [
@@ -25,15 +29,18 @@ import { SamplePipePipe } from './sample-pipe.pipe';
     ChildComponent,
     CompTocompComponent,
     AppshadowDirective,
-    SamplePipePipe
+    SamplePipePipe,
+    FileUpDownComponent,
+    ProductListComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
+    AppRoutingModule, 
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    FileUploadModule
   ],
-  providers: [EmployeeService,SamplePipePipe],
+  providers: [EmployeeService,SamplePipePipe,ProductListService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

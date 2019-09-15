@@ -5,6 +5,10 @@
 export const environment = {
   production: false,
   apiBaseUrl:'http://localhost:3000/Employees',
+  apiProductUrl:'http://localhost:3000/products',
+  // apiProductUrl:'http://localhost:3000/Employees',
+  
+  
 };
 
 /*

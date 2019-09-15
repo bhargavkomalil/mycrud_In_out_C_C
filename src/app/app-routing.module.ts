@@ -6,6 +6,8 @@ import { EmployeeListComponent } from './employees/employee-list/employee-list.c
 import { DatashareComponent } from './datashare/datashare.component';
 import { ChildComponent } from './child/child.component';
 import { CompTocompComponent } from './comp-tocomp/comp-tocomp.component';
+import { FileUpDownComponent } from './file-up-down/file-up-down.component';
+import { ProductListComponent } from './product-list/product-list.component';
 
 const routes: Routes = [
   {
@@ -21,10 +23,13 @@ const routes: Routes = [
   { path: 'Datashare', component: DatashareComponent },
   { path: 'child', component: ChildComponent },
   {path:'Comp_Comp',component:CompTocompComponent},
+  {path:'FileUpDownload',component:FileUpDownComponent},
+  {path:'productList',component:ProductListComponent},
   { path: "", redirectTo: "/List", pathMatch: "full" },
 
+  // app-product-list
 ];
-
+// 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],

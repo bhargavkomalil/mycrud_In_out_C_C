@@ -32,8 +32,7 @@ export class EmployeeListComponent implements OnInit {
 // debugger;
     // this.empService_.getemps().subscribe((data:Employee[]) => {
     //   this.employeeslist = data;
-    //   console.log('getdetails----',this.employeeslist)
-      
+    //   console.log('getdetails----',this.employeeslist)      
     //  })
      
   };

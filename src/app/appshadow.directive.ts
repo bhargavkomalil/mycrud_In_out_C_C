@@ -1,7 +1,9 @@
 import { Directive,ElementRef,Renderer2,Input, OnInit } from '@angular/core';
 
 @Directive({
-  selector: '[appAppshadow]'
+  selector: '[appAppshadow]',
+  // templateUrl: './appshadow.directive.html',
+  // styleUrls: ['./appDhadow.component.css']
 })
 export class AppshadowDirective implements OnInit {
 

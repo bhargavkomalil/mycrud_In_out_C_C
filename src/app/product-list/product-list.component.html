@@ -1,0 +1,33 @@
+<br><br>
+<h3>product-list works!</h3>
+
+<div  *ngFor="let brands of BrandNameDetails">
+    <p>{{brands}}</p>
+</div>
+-----------------------
+<!-- <input list="browsers" name="browser"> -->
+<select class="form-control" (change)="brandProducts($event.target.value)" >
+    <option>--Brands--</option>
+    <option *ngFor="let brands of BrandNameDetails">
+        {{brands.BrandName}}
+    </option>
+</select>
+
+<br>
+<br>
+
+<select class="form-control" (change)="Producttypes($event.target.value)">
+    <option>--ProductNames--</option>
+    <option *ngFor="let prodnames of b_products; let i = index" [value] ='i'>
+
+        <span>{{prodnames.ProductType}}</span>
+
+    </option>
+</select>
+
+<div *ngIf = "product_details">
+    <p>{{product_details.ProductType}}</p> 
+    <p>{{product_details.ModelNumber}}</p>
+    <p>{{product_details.ModelName}}</p>
+</div>
+<!-- product_details -->
